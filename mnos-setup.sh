@@ -132,7 +132,6 @@ function compile_mnos() {
 
   git clone $MNOS_REPO $TMP_FOLDER
   cd $TMP_FOLDER
-  git checkout rebrand
   ./autogen.sh
   ./configure --disable-tests --without-gui
   make
